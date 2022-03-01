@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Library App</title>
+          <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+          <div class="createBook">
+                    <h2>New Book </h2>
+                    <span class="close"><img src="./images/close.svg" alt=""></span>
+                    <span class="trash"><img src="./images/delete.svg" alt=""></span>
+                    <label for="name">Name: <input type="text" name="name" value=""></label>
+                    <label for="author">Author: <input type="text" name="author" value=""></label>
+                    <label for="pages">Pages: <input type="number" name="pages" min="0" value=""></label>
+                    <label for="pagesread">Pages Read: <span>--</span><input type="range" name="pagesread" disabled></label>
+                    <label for="read">Read:<input type="checkbox" name="read"></label>
+                    <button class=".addbook" type="button">Add</button>
+          </div>
+
+          <header> 
+                    <h1>Library App</h1>
+          </header>
+
+          <main>
+                    <section class="readbooks">
+                              <h2>Books Read</h2>
+                    </section>
+                    <section class="noreadbooks">
+                              <h2>Books No Read</h2>
+                    </section>
+                    <section class="info">
+                              <h2>Library Info</h2>
+                              <button type="button" class="openForm">ADD BOOK</button>
+                              <ul>
+                                        <li>Books: <span class="info-read">0</span></li>
+                                        <li>Pages read: <span class="info-pages">0</span></li>
+                              </ul>
+                              
+                    </section>
+          </main>
+
+
+          <script src="./main.js" type="module"></script>
+</body>
+</html>
