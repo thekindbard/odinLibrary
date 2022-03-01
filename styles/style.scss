@@ -181,5 +181,37 @@ section {
           }
 }
 
+@media (max-width:600px) {
+          main {
+                    flex-wrap: wrap;
+                    section {
+                              width: 50%;
+                              h2 {
+                                        font-size: 1.3rem;
+                              }
+                    }
+                    .info {
+                              width: 100%;
+                    }
+          }
+}
 
+@media (max-width:400px) {
+          .card {
+                    flex-direction: column;
+                    min-width: unset;
+                    padding: 10px;
+                    text-align: center;
+                    img {
+                              border: 0;
+                    }
+          }
+          .createBook {
+                    width: auto;
+                    input:not([type=checkbox]) {
+                              width: 100%;
+                              font-size: 1rem;
+                    }
+          }
+}
 

@@ -241,4 +241,42 @@ section h2 {
   display: -ms-flexbox;
   display: flex;
 }
+
+@media (max-width: 600px) {
+  main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main section {
+    width: 50%;
+  }
+  main section h2 {
+    font-size: 1.3rem;
+  }
+  main .info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: unset;
+    padding: 10px;
+    text-align: center;
+  }
+  .card img {
+    border: 0;
+  }
+  .createBook {
+    width: auto;
+  }
+  .createBook input:not([type=checkbox]) {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
